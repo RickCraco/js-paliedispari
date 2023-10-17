@@ -1,5 +1,7 @@
 //funzione pari e dispari
 
+paridispari();
+
 function paridispari(){
     const inputUtente = parseInt(prompt('inserire un numero da 1 a 5'));
     const oddEven = prompt('vuoi pari o dispari');
@@ -10,7 +12,7 @@ function paridispari(){
     if(inputUtente <= 5 && inputUtente >= 1){
       if(oddEven === 'pari'){
         if(sum % 2 === 0){
-          alert('hai vinto');
+          alert('hai vinto')
         }else{
           alert('hai perso');
         }
@@ -23,3 +25,7 @@ function paridispari(){
       }
     }
   }
+
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }  
