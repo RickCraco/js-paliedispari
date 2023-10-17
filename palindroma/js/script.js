@@ -1,6 +1,6 @@
 //stringa palindroma
 
-let stringa = 'anna';
+let stringa = prompt('inserire una stringa');
 
 palindroma(stringa);
 
@@ -10,10 +10,12 @@ function palindroma(stringa){
 
   for(let i = 0; i < Math.floor(length / 2); i++){
     if(stringa[i] !== stringa[length - 1 - i]){
-      return false;
+        alert('la stringa non é palindroma');
+        return false;
     }
   }
 
+  alert('la stringa é palindroma');
   return true;
 
 }
